@@ -3,7 +3,7 @@ import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/query/react";
 export const apiSlice = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://fcs-server-o8a9.onrender.com/",
+    baseUrl: "http://localhost:8800",
   }),
   tagTypes: [
     "login",
