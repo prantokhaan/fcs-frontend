@@ -1,0 +1,760 @@
+/* Oswald Font  */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
+
+/* Poppins Font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+/* Login  */
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+input {
+	appearance: none;
+	border-radius: 0;
+}
+
+.login-card {
+  font-family: "DM Sans", sans-serif;
+	margin: 2rem auto;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 425px;
+	background-color: #FFF;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px 0 rgba(#999, .25);
+	padding: .75rem;
+}
+
+.login-card-image {
+	border-radius: 8px;
+	overflow: hidden;
+	padding-bottom: 65%;
+	background-image: url('https://www.fcbarcelona.com/photo-resources/2021/08/09/276ad270-e5c6-453d-8d9f-212417ad7cb3/Camp-Nou-3.jpg?width=1200&height=750');
+	background-repeat: no-repeat;
+	background-size: 150%;
+	background-position: 0 5%;
+	position: relative;
+}
+
+.login-card-heading {
+	position: absolute;
+	left: 10%;
+	top: 15%;
+	right: 10%;
+	font-size: 1.75rem;
+	font-weight: 700;
+	color: #041e2b;
+	line-height: 1.222;
+	
+}
+
+small {
+		display: block;
+		font-size: .75em;
+		font-weight: 400;
+		margin-top: .25em;
+	}
+
+.login-card-form {
+	padding: 2rem 1rem 0;
+}
+
+.login-input {
+	display: flex;
+	flex-direction: column-reverse;
+	position: relative;
+	padding-top: 1.5rem;
+	&+.input {
+		margin-top: 1.5rem;
+	}
+}
+
+.input-label {
+	color: #8597a3;
+	position: absolute;
+	top: 1.5rem;
+	transition: .25s ease;
+}
+
+.login-input-field {
+	border: 0;
+	z-index: 1;
+	background-color: transparent;
+	border-bottom: 2px solid #eee; 
+	font: inherit;
+	font-size: 1.125rem;
+	padding: .25rem 0;
+	&:focus, &:valid {
+		outline: 0;
+		border-bottom-color: #6658d3;
+		&+.input-label {
+			color: #6658d3;
+			transform: translateY(-1.5rem);
+		}
+	}
+}
+
+.login-action {
+	margin-top: 2rem;
+}
+
+.login-action-button {
+	font: inherit;
+	font-size: 1.25rem;
+	padding: 1em;
+	width: 100%;
+	font-weight: 500;
+	background-color: #6658d3;
+	border-radius: 6px;
+	color: #FFF;
+	border: 0;
+	&:focus {
+		outline: 0;
+	}
+}
+
+.login-card-info {
+	padding: 1rem 1rem;
+	text-align: center;
+	font-size: .875rem;
+	color: #8597a3;
+	a {
+		display: block;
+		color: #6658d3;
+		text-decoration: none;
+	}
+}
+
+/* NavBar Starts */
+
+.navbar{
+  height: 80px;
+  background-color: #6658D3;
+  display: flex;
+  justify-content: center;
+}
+
+.navContainer{
+  width: 100%;
+  max-width: 1024px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  font-weight: 500;
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  
+}
+.logoPart{
+  color: wheat;
+  font-family: 'Oswald', sans-serif;
+}
+
+.navButton{
+  margin-left: 20px;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  border-radius: 20px;
+  background: #6658D3;
+box-shadow: inset 5px 5px 16px #6658D3,
+            inset -5px -5px 16px #6658D3;
+  border: 2px solid white;
+}
+
+.navButton:hover{
+  background-color: white;
+  border: 2px solid #6658D3;
+  box-shadow: none;
+  color: #6658D3
+}
+
+
+/* NavBar Ends */
+
+
+/* Mess Details Starts  */
+
+.messDetails{
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  padding: 20px;
+}
+
+.detailInfo{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+background: #ffffff;
+box-shadow: inset 5px 5px 23px #666666,
+            inset -5px -5px 23px #ffffff;
+  border-radius: 20px;
+}
+.detailName{
+  text-align: right;
+}
+
+.detailStat{
+  text-align: left;
+}
+/* Mess Details Ends  */
+
+/* Personal Info Starts  */
+
+.personalInfo{
+  background-color: #ffffff;
+  padding: 10px 0;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  box-shadow: 20px 20px 60px #d9d9d9,
+             -20px -20px 60px #ffffff;
+
+}
+
+.infoDetail{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 30px 10px;
+  column-gap: 20px;
+}
+.infoDetailItem{
+  padding: 50px;
+  background-color: #ffffff;
+  box-shadow: inset 5px 5px 10px #666666,
+            inset -5px -5px 10px #ffffff;
+  border-radius: 20px;
+}
+.infoDetailItem2{
+  padding: 50px;
+  background-color: #ffffff;
+  box-shadow: inset 5px 5px 10px #666666,
+            inset -5px -5px 10px #ffffff;
+  border-radius: 20px;
+}
+
+.infoIcon{
+  font-size: 30px;
+  color: #82038d;
+}
+.infoIcon2{
+  font-size: 30px;
+  color: #f02308;
+}
+.infoStat{
+  color: #02285e;
+}
+.infoStat2{
+  color: #f02308;
+}
+.infoName{
+  color: gray;
+}
+/* Personal Info Ends  */
+
+/* All Member Info Starts  */
+
+.membersInfo{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  padding: 20px 0;
+
+}
+
+.memberBox{
+  
+  padding: 30px;
+  margin: 40px 40px;
+  text-align: center;
+  box-shadow: inset 5px 5px 10px #666666,
+            inset -5px -5px 10px #ffffff;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.memberInfoDetail{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+}
+.memberInfoName{
+  text-align: right;
+}
+.memberInfoStat{
+  text-align: left;
+}
+
+.memberButton{
+  background-color: #6658D3 !important;
+  border: 2px solid #6658D3;
+  padding: 5px 10px;
+  margin-right: 15px;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.5s ease;
+}
+.memberButton:hover{
+  background-color: transparent !important;
+  border: 2px solid #6658D3;
+  padding: 5px 10px;
+  margin-right: 15px;
+  border-radius: 10px;
+  color: #6658D3;
+}
+
+.memberName{
+  color: gray;
+}
+
+/* All Member Info Ends  */
+
+/* Manager Part Start  */
+
+.managerNav{
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.manNavButton{
+  margin: 20px 20px 0 20px;
+  padding: 10px 15px;
+  font-family: 'Poppins', sans-serif;
+  background: #e0e0e0;
+box-shadow: inset 5px 5px 10px #5a5a5a,
+            inset -5px -5px 10px #ffffff;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+  color: black;
+
+}
+
+.manNavButton:hover{
+ background: #ffffff;
+box-shadow: inset 5px 5px 32px #666666,
+            inset -5px -5px 32px #ffffff;
+  color: #001d3d;
+}
+
+/* Deposit Section  */
+.depositSec{
+  margin-top: 40px;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.depGrid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 20px;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.486);
+}
+
+.depInput{
+  align-items: center;
+  width: 50%;
+  margin: 10px auto;
+  border: 2px solid #003580;
+  background-color: rgba(207, 203, 198, 0.76);
+  border-radius: 10px;
+}
+
+.depButton{
+  width: 50%;
+  margin: 10px auto;
+  background-color: #003580;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-transform: capitalize;
+  border: none;
+  font-weight: bold;
+  
+}
+
+/* Meal Part  */
+.mealGrid{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 20px;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.486);
+}
+
+/* Manager Part End  */
+
+
+/* New  */
+.form {
+      align-self: center;
+      margin-top: 40px;
+}
+
+.form__input {
+      width: clamp(120px, 50vw, 420px);
+      height: 2.5rem;
+      padding: 0 1.25rem;
+      border: 1px solid black;
+      border-radius: 2px;
+      margin: 0.625rem auto;
+      transition: all 250ms;
+      @media (min-width: 768px) {
+        width: clamp(120px, 35vw, 420px);
+      }
+      &:focus {
+        outline: none;
+        border-top-color: rgba(0,0,0,0.1);
+      }
+      &:focus + .form__label, &:not(:placeholder-shown) + .form__label {
+        transform: translateY(-5.50rem) scale(1);
+        color: black;
+      }
+      &::placeholder {
+          display: none;
+          color: transparent;
+          -webkit-user-select: none; /* Safari */
+          -ms-user-select: none; /* IE 10 and IE 11 */
+          user-select: none; /* Standard syntax */
+      }
+      &:not(:placeholder-shown) {
+        border-top-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    .form__label {
+      font-size: 1rem;
+      color: grey;
+      display: block;
+      
+      transform: translate(1.25rem,-2.5rem);
+      transform-origin: 0 0; 
+      transition: all 500ms;
+      
+      -webkit-user-select: none; /* Safari */
+      -ms-user-select: none; /* IE 10 and IE 11 */
+      user-select: none; /* Standard syntax */
+      pointer-events: none; 
+    }
+
+.login{
+  background-color: black;
+  padding-top: 50px;
+  min-height: 100vh;
+}
+.login label , .login h1{
+  color: white !important;
+  opacity: 0.6;
+}
+.login-form{
+  background-color: #1F1F1F;
+  width: 50%;
+  margin: auto;
+}
+.login-form input{
+  background-color: #333333 !important;
+  border : none !important;
+  color: white;
+  opacity: 0.5;
+  margin-bottom: 20px;
+}
+.login-logo{
+  position: absolute;
+  left:0;
+  right:10%;
+  top: 80%;
+  bottom: 50%;
+  transform: translateY(-50% , -50%);
+  font-size:45px;
+  opacity: 0.2 !important;
+}
+.register-logo{
+  position: absolute;
+  left:60%;
+  right:0;
+  top: 85%;
+  bottom: 50%;
+  transform: translateY(-50% , -50%);
+  font-size:45px;
+  opacity: 0.2 !important;
+}
+.login a{
+  color: white !important;
+  opacity: 0.5;
+}
+.btn1{
+  background-color : black !important;
+  color: white !important;
+  padding: 5px 15px !important;
+  outline: none !important;
+  border-radius: 10px;
+  box-shadow: 0 0 2px 2px rgb(77, 67, 67) !important;
+  transition: all 0.5s ease;
+}
+.btn1:hover{
+  color: black !important;
+  background-color: white !important;
+
+}
+
+.inputText{
+  padding: 20px;
+  font-size: 30px;
+  width: 70%;
+  background-color: aliceblue;
+}
+
+/* Cost  */
+
+.costHistory{
+  background: #ffffff;
+box-shadow: inset 5px 5px 23px #666666,
+            inset -5px -5px 23px #ffffff;
+  border-radius: 20px;
+  padding: 15px;
+  color: black;
+  padding: 20px 0;
+  font-family: 'Poppins', sans-serif !important;
+
+  
+}
+
+.delButton{
+  background-color : rgb(83, 3, 3) !important;
+  color: white !important;
+  padding: 5px 15px !important;
+  outline: none !important;
+  border-radius: 10px;
+  box-shadow: 0 0 2px 2px rgb(77, 67, 67) !important;
+  transition: all 0.5s ease;
+  border: none;
+  font-family: 'Poppins', sans-serif !important;
+}
+.delButton:hover{
+  color: black !important;
+  background-color: white !important;
+}
+
+/* Bazar Dates  */
+.bazarHistory{
+  background: #ffffff;
+box-shadow: inset 5px 5px 23px #666666,
+            inset -5px -5px 23px #ffffff;
+  border-radius: 20px;
+  padding: 15px;
+  color: black;
+  padding: 20px 0;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* Notifications  */
+
+.notificationSeen{
+  background: #ffffff;
+box-shadow: inset 5px 5px 23px #666666,
+            inset -5px -5px 23px #ffffff;
+  border-radius: 20px;
+  padding: 15px;
+  color: black;
+  padding: 20px 0;
+  font-family: 'Poppins', sans-serif !important;
+}
+.notificationUnseen{
+  background: #d2f607;
+box-shadow: inset 5px 5px 23px #666666,
+            inset -5px -5px 23px #ffffff;
+  border-radius: 20px;
+  padding: 15px;
+  color: black;
+  padding: 20px 0;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* Responsive  */
+
+@media only screen and (max-width: 768px) {
+  .infoDetail{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 30px 10px;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.detailNameItem, .detailStatItem {
+  font-size: 14px;
+}
+.detailNameItemExtra{
+  font-size: 12px;
+}
+.memberNameItem, .memberStatItem{
+  font-size: 12px;
+}
+
+.logo{
+  font-size: 20px;
+}
+
+.navButton{
+  font-size: 14px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  background: #001D3D;
+box-shadow: inset 5px 5px 16px #000c18,
+            inset -5px -5px 16px #002e62;
+  border: 2px solid limegreen;
+
+}
+.infoDetailItem{
+  padding: 25px;
+}
+.login{
+  background-color: black;
+  width: 100%;
+  padding: -100px;
+}
+.inputText{
+  padding: 15px;
+  font-size: 30px;
+}
+.login-form{
+  background-color: #1F1F1F;
+  width: 100%;
+  margin: auto;
+}
+}
+
+
+/* Team Details  */
+
+.teamBox{
+  
+  padding: 30px;
+  margin: 40px 40px;
+  text-align: center;
+  box-shadow: inset 5px 5px 10px #666666,
+            inset -5px -5px 10px #ffffff;
+  background-color: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.leagues{
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+/* Tabs */
+
+.tabs{
+  margin-top: 20px;
+  height: 70px;
+  background-color: #8279c7;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tabsButton{
+  margin-top: 10px;
+  margin-left: 20px;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  border-radius: 20px;
+  background: #8279c7;
+box-shadow: inset 5px 5px 16px #8279c7,
+            inset -5px -5px 16px #8279c7;
+  border: 2px solid white;
+}
+
+
+/* Matches */
+
+.matches{
+  /* border: 2px solid #8279c7; */
+  font-family: 'Poppins', sans-serif;
+}
+
+.singleMatch{
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  border: 2px solid #8279c7;
+  border-radius: 20px;
+}
+
+.matchButton{
+  background-color: #6658D3;
+  border: 1px solid #6658D3;
+  padding: 6px 16px;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+}
+
+.matchEdit{
+  height: 90vh;
+  border: 2px solid #6658D3;
+  border-radius: 20px;
+  margin-top: 20px;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.singleMatchEdit{
+  display: flex;
+  justify-content: space-between;
+}
+
+.matchEditInput {
+	display: flex;
+	flex-direction: column-reverse;
+	position: relative;
+	padding-top: 1.5rem;
+	&+.input {
+		margin-top: 1.5rem;
+	}
+}
+
+.match-input-field {
+  width: 50%;
+  margin: 0 auto;
+	border: 0;
+	z-index: 1;
+	background-color: transparent;
+	border-bottom: 2px solid #eee; 
+	font: inherit;
+	font-size: 1.125rem;
+	padding: .25rem 0;
+	&:focus, &:valid {
+		outline: 0;
+		border-bottom-color: #6658d3;
+		&+.input-label {
+			color: #6658d3;
+			transform: translateY(-1.5rem);
+		}
+	}
+}
+
+.match-input-label {
+  margin: 0 auto;
+	color: #8597a3;
+	position: absolute;
+	top: 1.5rem;
+	transition: .25s ease;
+}
